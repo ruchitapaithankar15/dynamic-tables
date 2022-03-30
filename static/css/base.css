@@ -1,0 +1,81 @@
+/* Ruchita Paithankar, rhp44@drexel.edu
+CS530: DUI, Assignment 2 */
+
+
+body {
+    font-family: "Avenir";
+    font-size: 1rem;
+    background: #eee;
+}
+
+header {
+    background: #006298;
+}
+
+.btn-primary {
+    background: #006699;
+    border-color: #006298;
+}
+
+.btn-primary:hover {
+    background: #E1E1E0;
+    border-color: #A7A8AA;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #FFC600;
+}
+
+.content {
+    padding: 2rem 1.5rem;
+}
+
+.jumbotron {
+    padding: 1.5rem;
+    background: 0;
+}
+
+.jumbotron img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .content-table div.row {
+    background-color: #B7BF10;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+/*limiting image size in the tables*/
+  .bike-images{
+    width: 100px;;
+  }
+
+/*greys out rows when unavailable*/
+.unavailable{
+    opacity: .25;
+}
+
+/*turns the minus sign unclickable after it reaches zero*/
+.unclickable{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/*for - and + buttons*/
+.btn-secondary{
+   text-align: center;
+   padding: 5px 10px;
+   justify-content: space-around;
+}

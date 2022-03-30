@@ -1,0 +1,42 @@
+
+{% extends 'base.html' %}
+{% set active = "RentBikes" %}
+
+{% block header %}
+<script src="/static/js/rentView.js"></script>
+{% endblock %}
+
+{% block title %}
+Related Sites
+{% endblock %}
+
+{% block content %}
+
+<h1>Rent a Bike</h1>
+
+<p>
+    Please select a rental from our available bikes below!
+</p>
+<table class="table">
+    <thead>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Available</th>
+        <th><button type="button" class="btn btn-danger" id="Reset">Reset</button></th>
+    </thead>
+    
+<tbody id="table" class="tables">
+    </tbody>
+</table>
+
+<!-- Script to load table body -->
+<script>
+
+    $(() => {
+        const rentViewer = new rentView();
+        rentViewer.load();
+    });
+
+</script>
+
+{% endblock %}
